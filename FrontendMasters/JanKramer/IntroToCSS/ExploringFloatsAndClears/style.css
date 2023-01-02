@@ -1,0 +1,32 @@
+h1 {
+    color:aqua
+}
+.floatleft {
+    float: left;
+    border: 5px solid red;
+    margin-right: 1rem;
+}
+
+blockquote p{
+    color: purple;
+}
+
+cite {
+    color: pink;
+}
+
+p {
+    color: blue;
+}
+
+.littlep {
+    color: brown;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+.floatright {
+    float: right;
+    border: 5px solid red;
+    margin-left: 1rem;
+}

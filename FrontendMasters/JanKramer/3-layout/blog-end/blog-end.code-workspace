@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../boxmodel"
+    },
+    {
+      "path": "../blog-begin"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "blog-begin"
+  }
+}

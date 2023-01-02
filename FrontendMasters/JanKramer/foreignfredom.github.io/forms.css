@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: goldenrod;
+	margin: 0;
+	padding: 0;
+	}
+	h1{
+		font-family: 'Nabla', cursive;
+	}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	background-color: #0d0ddc;
+	display: flex;
+	flex-flow: row nowrap;
+}
+section {
+	flex-basis: 57%;
+	margin-right: 10%;
+}
+aside {
+	flex-basis: 33%;
+}
+p, [for="abtype"] {
+	margin-bottom: 0;
+	margin-top: 2rem;
+}
+fieldset, #abtype {
+	margin-bottom: 2rem;
+}
+fieldset {
+	border: 4px dotted black;
+	border-radius: 10px;
+}
+legend {
+	font-family: 'Nabla', cursive;
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+label {
+	font-family: 'Amatic SC', cursive;
+	font-size: 2.5rem;
+	display: block;
+	color: lime;
+}
+h2 {
+	font-family: 'Armatic', cursive;
+	font-size: 1.2rem;
+	color: hotpink;
+}
+p{
+	font-family: 'Amatic SC', cursive;
+	font-size: 2.0rem;
+	color: lime;
+}
+input:not([type="radio"]):not([type="checkbox"]),
+textarea {
+	display: block;
+	margin-bottom: 2rem;
+	width: 20rem;
+	font-family: 'Amatic SC', cursive;
+	font-size: 2.0rem;
+	border-radius: 10px;
+	padding: 0 1rem;
+	color: hotpink;
+}
+textarea {
+	height: 10rem;
+	padding: 1rem;
+}
+select {
+	font-size: 2.0rem;
+	font-family: 'Amatic SC', cursive;
+	color: hotpink;
+	border-radius: 5px;
+
+}
+button {
+	margin: 2rem 0;
+	background-color: red;
+	color: white;
+	border: none;
+	font-size: 2.0rem;
+	padding: 2.0rem 4rem;
+	border-radius: 10px;
+	font-family: 'Amatic SC', cursive;
+}
+button:hover span {
+	display: none;
+}
+button:hover:before {
+	content: "👀🫵🏾🪐🛸👽";
+}
+button:hover {
+	background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
