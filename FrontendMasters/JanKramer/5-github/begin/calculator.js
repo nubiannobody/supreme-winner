@@ -11,11 +11,31 @@ function buttonClick(value) {
   } else {
     // this is a number
     handleNumber(value);
-  }
-    
+  }  
+  screen.innerText = buffer; // rerenders everytime user clicks something ||sets what user clicks to display on screen
 }
 
-function handleSymbol(symbol){}
+function handleSymbol(symbol){
+//   if (symbol === 'C')  {
+//     buffer = "0";
+//     runningTotal = 0;
+//   }
+
+    switch (symbol) {
+     case 'C':
+        buffer = '0';
+        runningTotal = 0;
+        break;
+     case '+':
+     case '-':
+     case '&times;':
+     case '&divide;':
+        handleMath(symbol);
+        break;
+    }
+}
+
+function
 
 function handleNumber(numberString){
     if (buffer === "0") {
@@ -23,7 +43,6 @@ function handleNumber(numberString){
     } else {
         buffer += numberString;
     }
-    screen.innerText = buffer; // sets what user clicks to display on screen
 }
 
 function init () {
