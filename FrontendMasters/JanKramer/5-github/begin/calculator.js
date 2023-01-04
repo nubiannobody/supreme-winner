@@ -27,10 +27,11 @@ function handleSymbol(symbol){
             return;
         }
         flushOperation(parseInt(buffer));
-        previousOperator = null;
-        buffer = runningTotal;
-        runningTotal = 0;
-        break;
+        previousOperator = null; // user is just getting started
+        buffer = runningTotal; // 
+        runningTotal = 0; // problem complete reset to zero
+        break; 
+     case '←':
      case '+':
      case '-':
      case '×':
@@ -84,5 +85,5 @@ function init () {
   })
 }
 
-init(); // this is where everything gets run once
+init(); // this is where everything gets run once || querys the selector || passes everything into our button click function 
 
