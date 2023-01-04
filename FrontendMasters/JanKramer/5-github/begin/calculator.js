@@ -23,8 +23,8 @@ function handleSymbol(symbol){
         break;
      case '+':
      case '-':
-     case '&times;':
-     case '&divide;':
+     case '×':
+     case '÷':
         handleMath(symbol);
         break;
     }
@@ -39,7 +39,25 @@ function handleMath(symbol){
    const intBuffer = parseInt(buffer); // turns buffer into number
    if (runningTotal === 0) {
     runningTotal = intBuffer;
+   } else {
+    flushOperation(intBuffer);
+    //runningTotal = intBuffer + buffer;
    }
+   previousOperator = symbol;
+
+   buffer = '0';
+}
+
+function flushOperation(intBuffer){
+    if (previousOperator === '+') {
+        runningTotal += intBuffer; // if + is pressed add
+    } else if (previousOperator === '-') {
+        runningTotal -= intBuffer;
+    } else if (previousOperator === '×') {
+        runningTotal *= intBuffer;
+    } else {
+        runningTotal /= intBuffer;
+    }
 }
 
 function handleNumber(numberString){
@@ -58,6 +76,4 @@ function init () {
 }
 
 init(); // this is where everything gets run once
-
-
 
