@@ -19,12 +19,12 @@ body {
 .circle::before {
     content: attr(data-letter);
     position: absolute;
-    color: orange;
+    color: saddlebrown;
     font-family: sans-serif;
     left: 100%;
     transform: rotate(15deg);
     opacity: 0;
-    text-shadow: 3px 3px 1px #000fff;
+    text-shadow: 3px 3px 1px hotpink;
 }
 
 .circle:nth-child(1) {
@@ -43,6 +43,24 @@ body {
     animation: turn 500ms linear  1 forwards;
 }
 .circle:nth-child(5) {
+    animation: turn 500ms linear 2.0s 1 forwards;
+}
+.circle:nth-child(6) {
+    animation: turn 500ms linear 1 forwards;
+}
+
+.circle:nth-child(7) {
+    animation: turn 500ms linear 1 forwards;
+}
+
+.circle:nth-child(8) {
+    animation: turn 500ms linear 1s 1 forwards;
+}
+
+.circle:nth-child(9) {
+    animation: turn 500ms linear  1 forwards;
+}
+.circle:nth-child(10) {
     animation: turn 500ms linear 2.0s 1 forwards;
 }
 
@@ -71,7 +89,21 @@ body {
 .circle:nth-child(5)::before {
     animation: jump 500ms linear 2.0s 1 forwards;
 }
-
+.circle:nth-child(6)::before {
+    animation: jump 500ms linear 1 forwards;
+    }
+.circle:nth-child(7)::before {
+    animation: jump 500ms linear 500ms 1 forwards;
+}
+.circle:nth-child(8)::before {
+    animation: jump 500ms linear 1s 1 forwards;
+}
+.circle:nth-child(9)::before {
+    animation: jump 500ms linear 1.5s 1 forwards;
+}
+.circle:nth-child(10)::before {
+    animation: jump 500ms linear 2.0s 1 forwards;
+}
     @keyframes jump {
         0% {
             opacity: 0;
