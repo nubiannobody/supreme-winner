@@ -1,0 +1,15 @@
+h2 {
+    font-size: 6rem;
+}
+
+.circle {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.circle::before {
+    content: attr(data-letter);
+}
