@@ -46,3 +46,17 @@ h2 {
             transform: rotate(-180deg);
         }
     }
+
+.circle:nth-child(1)::before {
+    animation: jump 500ms linear 1 forwards;
+    }
+.circle:nth-child(2)::before {
+    animation: jump 500ms linear 500ms 1 forwards;
+}
+.circle:nth-child(3)::before {
+    animation: jump 500ms linear 1s 1 forwards;
+}
+.circle:nth-child(4)::before {
+    animation: jump 500ms linear 1.5s 1 forwards;
+}
+
