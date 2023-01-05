@@ -1,8 +1,13 @@
 h2 {
     font-size: 6rem;
-    color: pink;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 .circle {
     display: inline-block;
     position: relative;
@@ -14,7 +19,7 @@ h2 {
 .circle::before {
     content: attr(data-letter);
     position: absolute;
-    color: pink;
+    color: orange;
     font-family: sans-serif;
     left: 100%;
     transform: rotate(15deg);
