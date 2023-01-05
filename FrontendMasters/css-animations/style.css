@@ -1,5 +1,6 @@
 h2 {
     font-size: 6rem;
+    color: pink;
 }
 
 .circle {
@@ -20,3 +21,28 @@ h2 {
     opacity: 0;
     text-shadow: 3px 3px 1px #000fff;
 }
+
+.circle:nth-child(1) {
+    animation: turn 500ms linear 1 forwards;
+}
+
+.circle:nth-child(2) {
+    animation: turn 500ms linear 500ms 1 forwards;
+}
+
+.circle:nth-child(3) {
+    animation: turn 500ms linear 1s 1 forwards;
+}
+
+.circle:nth-child(4) {
+    animation: turn 500ms linear 1.5s 1 forwards;
+}
+    @keyframes turn {
+        0% {
+            transform: rotate(0);
+        }
+
+        100% {
+            transform: rotate(-180deg);
+        }
+    }
