@@ -60,3 +60,13 @@ h2 {
     animation: jump 500ms linear 1.5s 1 forwards;
 }
 
+    @keyframes jump {
+        0% {
+            opacity: 0;
+            transform: rotate(15deg);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate(180deg);
+        }
+    }
