@@ -554,7 +554,7 @@ width: 100%;
       80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5;}
       81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
       100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
-  }*/
+  }
   
   /* 12 */
   .btn-12{
@@ -734,8 +734,9 @@ width: 100%;
   
   /* 16 */
   .btn-16 {
+    background-color: rgba(66, 62, 62, 0.6),;
     border: none;
-    color: #000;
+    color: #fff;
   }
   .btn-16:after {
     position: absolute;
