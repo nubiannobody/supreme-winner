@@ -73,7 +73,7 @@ button {
 }
 /* 3 */
 .btn-3 {
-    background: rgb(35, 33, 180);
+    background: rgba(30, 201, 141, 0.539);
     background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251,) 100%);
     width: 130px;
     height: 40px;
@@ -113,7 +113,7 @@ button {
 /* 4 */
 .btn-4 {
     background-color: #4dccc6;
-    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    background-image: linear-gradient(315deg, #1e3736 0%, #775fd9 74%);
     line-height: 42px;
     padding: 0;
     border: none;
@@ -571,7 +571,7 @@ width: 100%;
   }
   .btn-12 span {
     background: rgb(0,172,238);
-  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  background: linear-gradient(0deg, rgb(75, 15, 158) 0%, rgb(226, 179, 129) 100%);
     display: block;
     position: absolute;
     width: 130px;
@@ -746,7 +746,7 @@ width: 100%;
   }
   .btn-16 span {
     background: rgb(0,172,238);
-  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  background: linear-gradient(0deg, rgb(0, 238, 194) 0%, rgba(2,126,251,1) 100%);
     display: block;
     position: absolute;
     width: 130px;
