@@ -8,9 +8,15 @@ prevBtn.addEventListener('click', function() {
 });
 
 nextBtn.addEventListener('click', function() {
+    console.log('this happens');
     galleryImgs[currentlySelected].classList.remove("active");
     currentlySelected++; //currentlySelected = currentlySelected + 1;
     galleryImgs[currentlySelected].classList.add("active");
     prevBtn.disabled = false;
+
+    if (galleryImgs.length === currentlySelected + 1) {
+        nextBtn.disabled = true;
+        console.log("You're done");
+    }
 });
 
