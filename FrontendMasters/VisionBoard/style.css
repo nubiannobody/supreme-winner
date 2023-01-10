@@ -23,7 +23,6 @@ img {
 [data-columns="4"] {
 grid-template-columns: repeat(4, 1fr);
 }
-/*
 .container {
     position: relative;
     width: 33.33%;  
@@ -55,4 +54,3 @@ grid-template-columns: repeat(4, 1fr);
     transform: translate(-50%, -50%);
     text-align: center;
 }
-*/
