@@ -12,12 +12,14 @@ h2 {
     display: flex;
     
 }
+.container {
+    position: relative;
+    width: 50%;
+}
 img {
-    margin: 10px;
-    float: left;
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 .overlay {
     position: absolute;
