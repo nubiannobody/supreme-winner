@@ -24,8 +24,7 @@ img {
 grid-template-columns: repeat(4, 1fr);
 }
 .container {
-    position: relative;
-    width: 33.33%;  
+    position: relative; 
 }
 .overlay {
     position: absolute;
