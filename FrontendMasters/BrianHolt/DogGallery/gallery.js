@@ -8,6 +8,7 @@ prevBtn.addEventListener('click', function() {
 
 nextBtn.addEventListener('click', function() {
     galleryImgs[currentlySelected].classList.remove("active");
-
+    currentlySelected++; //currentlySelected = currentlySelected + 1;
+    galleryImgs[currentlySelected].classList.add("active");
 });
 
