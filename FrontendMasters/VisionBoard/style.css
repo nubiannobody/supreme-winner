@@ -16,11 +16,13 @@ h2 {
 }
 img {
     padding-bottom: 10px;
-    display: block;
     width: 100%;
-    height: auto;
     border-radius: 25px;
 }
+div {
+    float: left;
+}
+
 .overlay {
     position: absolute;
     top: 0;
