@@ -8,14 +8,14 @@ body {
 }
 h2 {
     color: blueviolet;
-    font-size: 30px;
-    display: flex;    
+    font-size: 30px;  
 }
 .container {
     position: relative;
-    width: 50%;
+    width: 33.33%;
 }
 img {
+    padding-bottom: 10px;
     display: block;
     width: 100%;
     height: auto;
