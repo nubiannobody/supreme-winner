@@ -52,10 +52,18 @@ body {
     margin: 0;
     font-family: Arial;
     padding: 15px;
+    position: relative;
+    z-index: 5;
 }
 .brand {
     margin: 0;
     font-size: 50px;
     cursor: grab;
+    cursor: -webkit-grab;
     z-index: 10;
+    background-color: white;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border: 1px solid #666;
 }
