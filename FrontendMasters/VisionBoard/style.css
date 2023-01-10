@@ -11,10 +11,6 @@ h2 {
     color: blueviolet;
     font-size: 30px;  
 }
-.container {
-    position: relative;
-    width: 33.33%;  
-}
 img {
     border-radius: 25px;
 }
@@ -24,10 +20,15 @@ img {
     padding: 1rem;
     margin: 0 0 1rem 0;
   }
-[data-columns="3"] {
-grid-template-columns: repeat(3, 1fr);
+[data-columns="4"] {
+grid-template-columns: repeat(4, 1fr);
 }
-/* .overlay {
+/*
+.container {
+    position: relative;
+    width: 33.33%;  
+}
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
