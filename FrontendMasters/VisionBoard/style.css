@@ -12,13 +12,14 @@ h2 {
 }
 .container {
     position: relative;
-    width: 33.33%;
+    width: 50%;  
 }
 img {
     padding-bottom: 10px;
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 25px;
 }
 .overlay {
     position: absolute;
@@ -31,6 +32,7 @@ img {
     opacity: 0;
     transition: .5s ease;
     background-color: #5700ba;
+    border-radius: 25px;
 }
 .container:hover .overlay {
     opacity: 1;
