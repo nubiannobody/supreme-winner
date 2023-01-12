@@ -12,7 +12,19 @@
 }
 .dog-img {
     display: none;
+    border-radius: 25px;
+    border: 20px pink solid;
+    margin-top: 20px;
+    margin-left: 375px
 }
 .show {
     display: block;
+}
+body {
+    background-color: saddlebrown;
+}
+h1 {
+    border: 20px solid;
+    text-align: center;
+    background-color: pink;
 }
