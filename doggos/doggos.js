@@ -11,8 +11,7 @@ function addDoggo () {
         img.alt = 'Cute doggo';
     
         document.querySelector('.doggos').appendChild(img);
-    
-        console.log("This does not work!")
     })
-    
 }
+
+document.querySelector('.add-doggo').addEventListener("click", addDoggo);
