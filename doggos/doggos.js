@@ -1,5 +1,6 @@
 const BREEDS_URL = 'https://dog.ceo/api/breeds/image/random';
 
+
 fetch(BREEDS_URL)
 .then(function(response) {
     return response.json();
@@ -9,5 +10,7 @@ fetch(BREEDS_URL)
     img.src = data.message;
     img.alt = 'Cute doggo';
 
-    document.querySelectior('.doggos').appendChild(img);
+    document.querySelector('.doggos').appendChild(img);
+
+    console.log("This does not work!")
 })
