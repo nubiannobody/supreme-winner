@@ -38,9 +38,6 @@ fetch(BREEDS_URL)
 })
 
 select.addEventListener("change", function(event) {
-    //console.log(event.target.value);
-
-
 
 let url = `https://dog.ceo/api/breed/${event.target.value}/images/random`;
 
@@ -55,17 +52,22 @@ getDoggo(url);
 // use the URL to change the current image
 
 // stop showing loading spinner 
+});
 
 const img = document.querySelector('.dog-img');
+const spinner = document.querySelector('.spinner');
 
 function getDoggo (url) {
+    spinner.classList.add("show");
+    img.classList.remove("show");
     fetch(url)
         .then(function (response) {
             return response.json();
         })
         .then(function(data) {
+          console.log(data);
           img.src = data.message;
+          spinner.classList.remove("show");
+          img.classList.add("show");
         })
     }
-
-});

@@ -5,12 +5,14 @@
 }
 
 .spinner {
-    font-size: 50px;
+    font-size: 150px;
     text-align: center;
     animation: 2s spin linear infinite;
     display: none;
 }
-
+.dog-img {
+    display: none;
+}
 .show {
     display: block;
 }
