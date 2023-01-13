@@ -1,55 +1,56 @@
-const canvas = d3.select('.canvas');
-const colorInput = d3.select('#colorPicker');
-const marker = d3.select('.marker');
-const clearButton = d3.select('[data-clear]');
-const saveButton = d3.select('[data-save]');
-const undoButton = d3.select('[data-save]');
-const copyButton = d3.select('[data-copy');
-const textArea = d3.select('#css');
-const drawArea = d3.select('.draw-area');
-const range = d3.select('#columns');
+const canvas = d3.select('.canvas')
+const colorInput = d3.select('#colorPicker')
+const marker = d3.select('.marker')
+const clearButton = d3.select('[data-clear]')
+const saveButton = d3.select('[data-save]')
+const undoButton = d3.select('[data-undo]')
+const copyButton = d3.select('[data-copy]')
+const textArea = d3.select('#css')
+const drawArea = d3.select('.draw-area')
+const range = d3.select('#columns')
 
-const width = drawArea.node().offsetWidth;
-const height = drawArea.node().offsetHeight;
-let columns = 30;
-const multiplier = height/width;
-let rows = columns * multiplier;
-let cellSize = 100 / columns;
-let rowSize = 100 / rows;
-let isPressed = false;
+const width = drawArea.node().offsetWidth
+const height = drawArea.node().offsetHeight
+let columns = 30
+const multiplier = height / width
+let rows = columns * multiplier
+let cellSize = 100 / columns
+let rowSize = 100 / rows
+let isPressed = false
 
-const bisect = d3.bisector((d) => d);
+const bisect = d3.bisector((d) => d)
 
-const dx = (posx) => {
-    const stepX = 1 / (columns - 1)
-    const dataX = d3.range(0, 100, stepX);
-    const indexX = bisect.center(dataX, posX / width);
-    return (data[indexX] * 100).toFixed(2);
+const dx = (posX) => {
+	const stepX = 1 / (columns - 1)
+	const dataX = d3.range(0, 100, stepX)
+	const indexX = bisect.center(dataX, posX / width)
+	return (dataX[indexX] * 100).toFixed(2)
 }
 
-const dy = (posy) => {
-    const stepY = 1 / (rows - 1);
-    const dataY = d3.range(0, 1, stepY);
-    const indexY = bisect.center(dataY, posY / height)
-    return (dataY[indexY] * 100).toFixed(2);
+const dy = (posY) => {
+	const stepY = 1 / (rows - 1)
+	const dataY = d3.range(0, 1, stepY)
+	const indexY = bisect.center(dataY, posY / height)
+	return (dataY[indexY] * 100).toFixed(2)
 }
 
-let bg = [];
-let bgPosition = [];
+let bg = []
+let bgPosition = []
 
 const draw = () => {
-    drawArea
-    .style('background-image', bg.join(','))
-    .style('background-position', bgPosition.join(','))
+	drawArea
+		.style('background-image', bg.join(','))
+		.style('background-position', bgPosition.join(','))
 }
 
 const updateText = () => {
-    textArea.html(`
-    aspect-ratio: 4 / 3;
-    background-image: ${bg.join(',')};
-    background-size: calc(100% / ${columns}) calc(100% / ${rows});
-    background-position: ${bgPosition.join(',')};
-    background-repeat: no-repeat;`)
+	textArea.html(`
+aspect-ratio: 4 / 3;
+background-image: ${bg.join(',')};
+background-size: calc(100% / ${columns}) calc(100% / ${rows});
+background-position: ${bgPosition.join(',')};
+background-repeat: no-repeat;
+	`)
 }
 
 const shouldDraw = (newBgValue, newBgPositionValue) => {
